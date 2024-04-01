@@ -1,7 +1,7 @@
 n, m, k = map(int, input().split())
 
 num_list = list(map(int, input().split()))
-print(num_list)
+
 sum = 0
 
 # m이 0이 될 때까지 가장 큰 걸 k번 더하고 두 번째로 큰 걸 1번 더하고 가장 큰 걸 k번 더하고 두 번째로 큰 걸 1번 더하고 반복,,
