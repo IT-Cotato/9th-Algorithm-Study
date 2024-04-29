@@ -2,17 +2,16 @@ from collections import deque
 
 n, m, k, x = map(int, input().split())
 
-# node, edge로 구성된 2차원 배열 생성
-graph = {}
+graph = {} # node, edge로 구성된 2차원 배열 생성
+distance = {} # 거리 배열 생성
+visited = {} # 방문 유무 배열 생성
 for i in range(n+1):
     graph[i] = []
+    distance[i] = 0
+    visited[i] = 0
 for _ in range(m):
     a, b = map(int, input().split())
     graph[a].append(b)
-
-# 거리, 방문유무 배열 생성
-distance = [0] * (n+1)
-visited = [0] * (n+1)
 
 # bfs 알고리즘 구현
 def bfs(start):
