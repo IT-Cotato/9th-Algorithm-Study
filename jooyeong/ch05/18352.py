@@ -1,4 +1,8 @@
 # BFS로 풂
+
+import sys
+input = sys.stdin.readline # 시간초과 문제 해결
+
 from collections import deque
 
 n, m, k, x = map(int, input().split())
