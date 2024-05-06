@@ -1,4 +1,7 @@
+import sys
 from collections import deque
+
+input = sys.stdin.readline # 시간초과 방지
 
 n, m, k, x = map(int, input().split())
 
