@@ -1,4 +1,4 @@
-let input = require("fs").readFileSync('chae-dahee/ch06/18310.txt').toString().trim().split("\n");
+let input = require("fs").readFileSync('/dev/stdin').toString().trim().split("\n");
 
 const n = parseInt(input[0]);
 const house = input[1].split(" ").map(Number)
