@@ -17,10 +17,10 @@ while(start <= end):
             total = 0 # 강의 길의의 총 합 초기화
         total += lec
 
-    if bluray <= m: # 블루레이 개수가 원하는 개수보다 작거나 같은 경우
+    if bluray > m: # 블루레이 개수가 원하는 개수보다 많은 경우
+        start = mid + 1 # 블루레이 개수 줄이기 위해 mid값 증가
+    else:
         result = mid
         end = mid - 1 # 블루레이 개수 늘리기 위해 mid값 감소
-    else:
-        start = mid + 1 # 블루레이 개수 줄이기 위해 mid값 증가
 
 print(result)
