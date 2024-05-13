@@ -1,4 +1,5 @@
 # DFS로 풀이
+
 import sys
 
 n = int(input()) # 개수
