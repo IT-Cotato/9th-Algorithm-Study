@@ -12,15 +12,15 @@ while(start <= end):
     bluray = 1
     mid = (start + end) // 2
     for lec in lectures:
-        if total + lec > mid: # 강의 길이의 총 합이 mid보다 큰 경우
+        if total + lec > mid: # 강의 길이의 총 합이 블루레이 크기보다 큰 경우
             bluray += 1 # 블루레이 개수 1 증가
             total = 0 # 강의 길의의 총 합 초기화
         total += lec
 
     if bluray > m: # 블루레이 개수가 원하는 개수보다 많은 경우
-        start = mid + 1 # 블루레이 개수 줄이기 위해 mid값 증가
+        start = mid + 1 # 블루레이 개수 줄이기 위해 블루레이 크기 증가
     else:
         result = mid
-        end = mid - 1 # 블루레이 개수 늘리기 위해 mid값 감소
+        end = mid - 1 # 블루레이 개수 늘리기 위해 블루레이 크기 감소
 
 print(result)
