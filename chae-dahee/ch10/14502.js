@@ -1,5 +1,5 @@
 const [N, ...map] = require("fs")
-  .readFileSync("chae-dahee/ch10/14502.txt")
+  .readFileSync("/dev/stdin")
   .toString()
   .trim()
   .split("\n")
