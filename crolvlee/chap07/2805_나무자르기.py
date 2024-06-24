@@ -11,7 +11,6 @@ while start <= end:
 
     mid = (start + end) // 2  # 절단기의 높이
 
-    # cut_sum 구학기
     for i in tree:
         if i > mid:  # 절단기의 높이보다 주어진 나무가 긴 경우
             cut_sum += i - mid
