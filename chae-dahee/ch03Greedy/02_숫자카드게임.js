@@ -1,5 +1,5 @@
 let fs = require('fs');
-let input = fs.readFileSync('chae-dahee/ch03Greedy/02input.txt').toString().trim().split('\n');
+let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 let [nm, ...arr] = input;
 let [n, m] = nm.split(' ').map(v => +v);
