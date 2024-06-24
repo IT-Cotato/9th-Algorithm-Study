@@ -8,6 +8,8 @@ for i in range(N):
     num = int(input())
     heapq.heappush(card_heap, num)
 
+# card_heap = [60, 40, 50, 70]
+
 # 총 비교 횟수
 total_cost = 0
 
