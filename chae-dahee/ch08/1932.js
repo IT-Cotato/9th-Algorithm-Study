@@ -1,13 +1,10 @@
 const input = require("fs")
-  .readFileSync("chae-dahee/ch08/1932.txt")
+  .readFileSync("/dev/stdin")
   .toString()
   .trim()
   .split("\n");
-const n = parseInt(input[0]); // 삼각형 높이
-
-const p = new Array(n).fill().map(() => []); // 입력 삼각형 값들과 dp 배열로 사용하기 위한 2차원 배열
-
-// 피라미드 만들기
+const n = parseInt(input[0]);
+const p = new Array(n).fill().map(() => []);
 for (let i = 1; i <= n; i++) {
   const curRow = input[i].split(" ").map(Number);
   p[i - 1].push(...curRow);

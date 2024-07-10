@@ -1,5 +1,5 @@
 const [n, ...arr] = require("fs")
-  .readFileSync("chae-dahee/ch08/14501.txt")
+  .readFileSync("/dev/stdin")
   .toString()
   .trim()
   .split("\n");

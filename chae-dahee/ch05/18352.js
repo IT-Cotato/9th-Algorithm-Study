@@ -1,4 +1,4 @@
-const input = require('fs').readFileSync('chae-dahee/ch05/18352.txt').toString().trim().split('\n');
+const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
 
 const [n,m,k,x] = input.shift().split(' ').map(Number);
 const arr = input.map((v)=>v.split(' ').map(Number));
@@ -10,11 +10,11 @@ arr.map(([from, to]) => graph[from].push(to));
 
 const bfs = (start) => {
     const Queue = [start];
-    distance[start] = 0;
+    distance[start] = 1;
 
     while (Queue.length) {
         const now = Queue.shift();
-        if (distance[now] == k){
+        if (distance[now] == k+1){
             ans.push(now);
             continue;
         }
