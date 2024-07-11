@@ -7,7 +7,7 @@ let input = require("fs")
 const [n, d] = input[0].split(" ").map(Number);
 
 const graph = Array.from(Array(d + 1), () => []);
-let dist = Array.from(Array(d + 1).fill(Infinity));
+let dist = Array.from(Array(d + 1).fill(Infinity)); //dist[50]:10
 
 for (let i = 0; i < n; i++) {
   const [start, end, w] = input[i + 1].split(" ").map(Number);
@@ -15,7 +15,7 @@ for (let i = 0; i < n; i++) {
   if (end - start <= w) continue;
 
   graph[start].push([end, w]);
-}
+} //graph[0]: [[50, 10], [50, 20]]
 
 let prev = -1;
 for (let i = 0; i <= d; i++) {

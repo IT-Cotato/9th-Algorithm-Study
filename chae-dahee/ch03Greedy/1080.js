@@ -9,6 +9,7 @@ const B = input.slice(N, N * 2).map((item) => item.split("").map(Number));
 
 function solution(N, M, A, B) {
   let cnt = 0;
+
   for (let i = 0; i < N - 2; i++) {
     for (let j = 0; j < M - 2; j++) {
       if (A[i][j] !== B[i][j]) {
@@ -26,6 +27,7 @@ function solution(N, M, A, B) {
   }
   return cnt;
 }
+
 function flip(x, y) {
   for (let i = x; i < x + 3; i++) {
     for (let j = y; j < y + 3; j++) {
